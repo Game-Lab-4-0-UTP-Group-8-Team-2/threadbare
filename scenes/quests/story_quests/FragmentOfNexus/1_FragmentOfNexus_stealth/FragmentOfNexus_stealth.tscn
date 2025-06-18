@@ -104,7 +104,7 @@ visible = false
 
 [node name="CollectibleItem" parent="." instance=ExtResource("8_n7rj1")]
 position = Vector2(2335, 955)
-next_scene = "uid://bfr7o6kdkowbc"
+next_scene = "uid://5xyjnlkpiw2m"
 item = SubResource("Resource_idy4y")
 collected_dialogue = ExtResource("10_2td1w")
 

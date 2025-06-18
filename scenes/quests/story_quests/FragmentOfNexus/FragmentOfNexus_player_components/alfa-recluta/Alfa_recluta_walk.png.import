@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br3mevimf3kw"
-path="res://.godot/imported/FragmentOfNexus_target.png-a67229e49c65f20790d5c9ddb303cb1f.ctex"
+uid="uid://twob78lvxlct"
+path="res://.godot/imported/Alfa_recluta_walk.png-6b77135f2fad8e174072f7030f81aa4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_target.png"
-dest_files=["res://.godot/imported/FragmentOfNexus_target.png-a67229e49c65f20790d5c9ddb303cb1f.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/Alfa_recluta_walk.png"
+dest_files=["res://.godot/imported/Alfa_recluta_walk.png-6b77135f2fad8e174072f7030f81aa4a.ctex"]
 
 [params]
 

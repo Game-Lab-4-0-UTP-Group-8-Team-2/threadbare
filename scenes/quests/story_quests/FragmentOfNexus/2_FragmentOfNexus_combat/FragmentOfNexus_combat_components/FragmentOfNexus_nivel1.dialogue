@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+[color=#380273]ALFA-RECLUTA[/color] \n¡Esa cosa se está cargando! ¡No dejes que te golpee!
+
+[color=#88ccff]SIERRA-7[/color] \nNo pienso esquivar. Voy a usar eso en su contra.
+
+[color=#ffa500]BT-Δ1[/color] \nProyección de trayectoria... impacto redirigido puede alcanzar el núcleo.
+
+[color=#380273]ALFA-RECLUTA[/color] \n¿Vas a hacer que se dispare a sí mismo?
+
+[color=#88ccff]SIERRA-7[/color] \nExacto. Es su error por confiar en tanta energía.
+
+=> END
+
+~ well_done
+
+=> END

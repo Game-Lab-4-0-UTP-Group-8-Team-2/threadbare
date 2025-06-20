@@ -15,17 +15,28 @@ do animation_player.animation_finished
 
 [color=#ffa500]BT-1 [/color] \n(recuperando conexión)... Unidad Sierra-7... vínculo dañado...
 
-[color=#00ff00]ALFA-RECLUTA[/color] \n¡Hey! ¡Sierra-7! ¿Estás viva? ¡Resiste! Esta zona no es segura.
+do animation_player.play(&"entry")
+
+do animation_player.animation_finished
+
+[color=#380273]ALFA-RECLUTA[/color] \n¡Hey! ¡Sierra-7! ¿Estás viva? ¡Resiste! Esta zona no es segura.
 
 [color=#88ccff]SIERRA-7 [/color] \n¿Eres... humano?
 
-[color=#00ff00]ALFA-RECLUTA[/color] \nSí. Pero no es momento de hablar. Esa instalación se viene abajo.
+[color=#380273]ALFA-RECLUTA[/color] \nSí. Pero no es momento de hablar. Esa instalación se viene abajo.
 
 [color=#88ccff]SIERRA-7 [/color] \nBT... ¿puedes oírme?... algo me dice que ya hemos pasado por esto...
 
 [color=#ffa500]BT-1 [/color] \nAccediendo... fragmentos encontrados...
 
+[color=#380273]ALFA-RECLUTA[/color] \n¡Muévanse! ¡Se vienen más patrullas!
+
 do animation_player.play(&"walk_off")
 
-[color=#00ff00][ALFA-RECLUTA][/color] \n¡Muévanse! ¡Se vienen más patrullas!
+do animation_player.animation_finished
+
+do animation_player.play(&"exit")
+
+do animation_player.animation_finished
+
 => END

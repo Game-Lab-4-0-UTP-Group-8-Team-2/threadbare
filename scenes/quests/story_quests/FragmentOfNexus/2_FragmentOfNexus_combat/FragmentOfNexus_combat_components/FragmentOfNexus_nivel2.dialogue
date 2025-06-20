@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: The Threadbare Authors
+# SPDX-License-Identifier: MPL-2.0
+
+~ start
+[color=#380273]ALFA-RECLUTA[/color] \n¡Este lanza proyectiles más rápido! ¡No te confíes!
+
+[color=#88ccff]SIERRA-7[/color] \nYa lo vi. Si no me aplasta, lo haré explotar desde dentro.
+
+[color=#ffa500]BT-Δ1[/color] \nFuente de energía externa detectada. Alta inestabilidad.
+
+[color=#380273]ALFA-RECLUTA[/color] \nEntonces destruye eso primero. Corta su energía.
+
+[color=#88ccff]SIERRA-7[/color] \nEntendido. Una espada, y su propia rabia.
+=> END
+
+~ well_done
+
+=> END

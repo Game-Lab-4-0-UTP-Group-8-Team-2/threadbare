@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dpthmphce1pny"
+path="res://.godot/imported/FragmentOfNexus_nivel3.dialogue-b0dbe954e501f7057c4a6a0ca9501652.tres"
+
+[deps]
+
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel3.dialogue"
+dest_files=["res://.godot/imported/FragmentOfNexus_nivel3.dialogue-b0dbe954e501f7057c4a6a0ca9501652.tres"]
+
+[params]
+
+defaults=true

@@ -1,6 +1,7 @@
-[gd_scene load_steps=10 format=4 uid="uid://b5ujj6rpva85"]
+[gd_scene load_steps=13 format=4 uid="uid://b5ujj6rpva85"]
 
 [ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="1_sjo2j"]
+[ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="2_c1kqb"]
 [ext_resource type="SpriteFrames" uid="uid://bjslq0h0elct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_sierra7.tres" id="3_c1kqb"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_qb52y"]
 [ext_resource type="Resource" uid="uid://cr24gcwd72ntb" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/FragmentOfNexus_intro.dialogue" id="5_uhytj"]
@@ -31,6 +32,86 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(-58, 509)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("OnTheGround/Alfa recluta:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-56, 509)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("OnTheGround/Alfa recluta:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"idle"]
+}
+
+[sub_resource type="Animation" id="Animation_c1kqb"]
+resource_name = "entry"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OnTheGround/Alfa recluta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-12, 495), Vector2(430, 495)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OnTheGround/Alfa recluta:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"idle"]
+}
+
+[sub_resource type="Animation" id="Animation_sjo2j"]
+resource_name = "exit"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OnTheGround/Alfa recluta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(430, 495), Vector2(1000, 495)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("OnTheGround/Alfa recluta:animation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"idle"]
 }
 
 [sub_resource type="Animation" id="Animation_7swpb"]
@@ -92,6 +173,8 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qdpvj"]
 _data = {
 &"RESET": SubResource("Animation_ld06i"),
+&"entry": SubResource("Animation_c1kqb"),
+&"exit": SubResource("Animation_sjo2j"),
 &"walk_off": SubResource("Animation_7swpb"),
 &"walk_on": SubResource("Animation_blo5s")
 }
@@ -103,9 +186,8 @@ texture_filter = 1
 texture_filter = 1
 
 [node name="Ground" type="TileMapLayer" parent="TileMapLayers"]
-tile_map_data = PackedByteArray("AAAAAAAAEAAAAAAAAAAAAAgAEAADAAAAAAAAAAkAEAAAAAEAAAAAAAUAEAAGAAEAAAAAAAYAEAAFAAIAAAAOAAkAEAACAAEAAAAOAAAAEAACAAAAAAAAAAEAEAAGAAEAAAAAAAIAEAAGAAEAAAAAAAMAEAAGAAEAAAAAAAQAEAAGAAEAAAABAAkAEAABAAEAAAACAAkAEAABAAEAAAADAAkAEAABAAEAAAAEAAkAEAABAAEAAAAFAAkAEAABAAEAAAAGAAkAEAABAAEAAAAHAAkAEAABAAEAAAAIAAkAEAABAAEAAAAJAAkAEAABAAEAAAAKAAkAEAABAAEAAAALAAkAEAABAAEAAAAMAAkAEAABAAEAAAANAAkAEAABAAEAAAABAAAAEAABAAAAAAACAAAAEAABAAAAAAADAAAAEAABAAAAAAAEAAAAEAABAAAAAAAFAAAAEAABAAAAAAAGAAAAEAABAAAAAAAHAAAAEAABAAAAAAAIAAAAEAABAAAAAAAJAAAAEAABAAAAAAAKAAAAEAABAAAAAAALAAAAEAABAAAAAAAMAAAAEAABAAAAAAANAAAAEAABAAAAAAAOAAEAEAAGAAEAAAAOAAIAEAAGAAEAAAAOAAMAEAAGAAEAAAAOAAQAEAAGAAEAAAAOAAUAEAAGAAEAAAAOAAYAEAAFAAIAAAABAAEAEAAAAAMAAAACAAEAEAABAAMAAAADAAEAEAACAAMAAAAGAAEAEAABAAMAAAAJAAEAEAACAAMAAAAMAAEAEAACAAMAAAANAAEAEAABAAMAAAAEAAEAEAADAAMAAAAFAAEAEAACAAMAAAAKAAEAEAABAAMAAAALAAEAEAACAAMAAAAHAAEAEAACAAMAAAAIAAEAEAADAAMAAAAOAAgAEAADAAAAAAA=")
+tile_map_data = PackedByteArray("AAAAAAAAEAAAAAAAAAAAAAgAEAADAAAAAAAAAAkAEAAAAAEAAAAAAAUAEAAFAAIAAAAAAAYAEAACAAMAAAAOAAkAEAACAAEAAAAOAAAAEAACAAAAAAAAAAEAEAAGAAEAAAAAAAIAEAAGAAEAAAAAAAMAEAAGAAEAAAAAAAQAEAAGAAEAAAABAAkAEAABAAEAAAACAAkAEAABAAEAAAADAAkAEAABAAEAAAAEAAkAEAABAAEAAAAFAAkAEAABAAEAAAAGAAkAEAABAAEAAAAHAAkAEAABAAEAAAAIAAkAEAABAAEAAAAJAAkAEAABAAEAAAAKAAkAEAABAAEAAAALAAkAEAABAAEAAAAMAAkAEAABAAEAAAANAAkAEAABAAEAAAABAAAAEAABAAAAAAACAAAAEAABAAAAAAADAAAAEAABAAAAAAAEAAAAEAABAAAAAAAFAAAAEAABAAAAAAAGAAAAEAABAAAAAAAHAAAAEAABAAAAAAAIAAAAEAABAAAAAAAJAAAAEAABAAAAAAAKAAAAEAABAAAAAAALAAAAEAABAAAAAAAMAAAAEAABAAAAAAANAAAAEAABAAAAAAAOAAEAEAAGAAEAAAAOAAIAEAAGAAEAAAAOAAMAEAAGAAEAAAAOAAQAEAAGAAEAAAAOAAUAEAAFAAIAAAAOAAYAEAACAAMAAAABAAEAEAAAAAMAAAACAAEAEAABAAMAAAADAAEAEAACAAMAAAAGAAEAEAABAAMAAAAJAAEAEAACAAMAAAAMAAEAEAACAAMAAAANAAEAEAABAAMAAAAEAAEAEAADAAMAAAAFAAEAEAACAAMAAAAKAAEAEAABAAMAAAALAAEAEAACAAMAAAAHAAEAEAACAAMAAAAIAAEAEAADAAMAAAAOAAgAEAADAAAAAAA=")
 tile_set = ExtResource("1_sjo2j")
-metadata/_edit_lock_ = true
 
 [node name="Sand" type="TileMapLayer" parent="TileMapLayers"]
 tile_map_data = PackedByteArray("AAAFAAcAEAAEAAQAAGAEAAcAEAAEAAIAAFADAAcAEAAEAAQAAGACAAcAEAAEAAIAAFABAAcAEAAFAAMAAAAJAAcAEAAEAAQAAGAIAAcAEAAEAAIAAFAHAAcAEAAEAAQAAGAGAAcAEAAEAAIAAFANAAcAEAAEAAQAAGAMAAcAEAAEAAIAAFALAAcAEAAEAAQAAGAKAAcAEAAEAAIAAFAOAAcAEAAEAAIAAFABAAMAEAAAAAUAAAABAAQAEAAAAAUAAAABAAIAEAAAAAQAAAABAAUAEAAAAAUAAAABAAYAEQABAA0AAAABAAgAEAAAAAYAAAADAAIAEAACAAQAAAACAAIAEAACAAQAAAAGAAIAEAACAAQAAAAHAAIAEAACAAQAAAAIAAIAEAACAAQAAAAJAAIAEAACAAQAAAAMAAIAEAACAAQAAAANAAIAEAADAAQAAAANAAMAEAADAAUAAAANAAQAEAADAAUAAAANAAUAEAADAAUAAAANAAYAEAADAAUAAAANAAgAEAADAAYAAAAMAAgAEAACAAYAAAALAAgAEAACAAYAAAAKAAgAEAACAAYAAAAIAAgAEAACAAYAAAAHAAgAEAACAAYAAAAGAAgAEAACAAYAAAAFAAgAEAACAAYAAAAEAAgAEAACAAYAAAADAAgAEAACAAYAAAACAAgAEAACAAYAAAAIAAQAEAACAAUAAGAIAAMAEAACAAUAAGAHAAQAEAACAAUAAGAHAAMAEAACAAUAAGAJAAQAEAACAAUAAGAJAAMAEAACAAUAAGAEAAQAEAAEAAYAAAALAAQAEAACAAUAAGADAAMAEAACAAUAAGADAAQAEAACAAUAAGAGAAQAEAACAAUAAGAGAAUAEAAEAAYAAAAMAAMAEAACAAUAAGAMAAQAEAACAAUAAGALAAMAEAACAAUAAGAKAAMAEAACAAUAAGAKAAQAEAAEAAYAAAAKAAUAEAACAAUAAGALAAUAEAACAAUAAGAMAAUAEAACAAUAAGAMAAYAEAACAAUAAGAKAAYAEAACAAUAAGALAAYAEAACAAUAAGAIAAYAEAACAAUAAGAIAAUAEAACAAUAAGAJAAUAEAACAAUAAGAJAAYAEAACAAUAAGAHAAYAEAACAAUAAGAHAAUAEAACAAUAAGAGAAYAEAACAAUAAGAFAAYAEAACAAUAAGAEAAYAEAACAAUAAGADAAYAEAACAAUAAGACAAYAEAACAAUAAGACAAUAEAACAAUAAGADAAUAEAACAAUAAGAEAAUAEAACAAUAAGAFAAUAEAACAAUAAGAFAAQAEAACAAUAAGAFAAMAEAACAAUAAGAEAAMAEAACAAUAAGAGAAMAEAACAAUAAGACAAMAEAACAAUAAGACAAQAEAACAAUAAGAJAAgAEAACAAYAAAALAAIAEAACAAQAAAAKAAIAEAACAAQAAAAFAAIAEAACAAQAAAAEAAIAEAACAAQAAAAAAAcAEAAEAAIAAFA=")
@@ -128,6 +210,13 @@ editor_draw_limits = true
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
 position = Vector2(-15, -40)
+
+[node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(-56, 509)
+scale = Vector2(1.5, 1.5)
+sprite_frames = ExtResource("2_c1kqb")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(-58, 509)

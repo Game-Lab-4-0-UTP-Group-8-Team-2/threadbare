@@ -4,10 +4,10 @@
 
 [resource]
 script = ExtResource("1_5nwld")
-title = ""
-description = ""
-authors = Array[String]([])
+title = "Fragment Of Nexus"
+description = "Una Spartan de élite llamada Sierra-7 despierta sin recuerdos en un planeta colapsado por tecnología temporal. Acompañada por su titán dañado BT-Δ1, deberá reconstruir su identidad y escapar, mientras huye de una facción alienígena que busca usarla como arma. A través de msiones de hackeo, combate y sigilo, la historia revela que ella fue parte de un experimento para evitar una guerra galáctica. Su escape final deja abierta la posibilidad de un nuevo futuro para la galaxia."
+authors = Array[String](["Javier Marlex Saravia Garcia", "John Anderson Chapoñan Montaño", "Hermes Jhoel Ramirez Otiniano"])
 affiliation = ""
-first_scene = "uid://c1gdct760l86h"
+first_scene = "uid://c03qcw5nkornc"
 animation_name = &""
 metadata/_custom_type_script = "uid://dts1hwdy3phin"

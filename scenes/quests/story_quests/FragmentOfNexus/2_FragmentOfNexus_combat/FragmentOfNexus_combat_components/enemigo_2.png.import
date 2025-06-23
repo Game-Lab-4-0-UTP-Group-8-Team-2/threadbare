@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mnmuy32uo0yn"
-path="res://.godot/imported/spritesheet.png-2ba023c93b1dbe2a542ba278fbefb1bf.ctex"
+uid="uid://dhq7xnmawuu2d"
+path="res://.godot/imported/enemigo_2.png-4ce3d4566e9ef6f1c19d47f211e042d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/spritesheet.png"
-dest_files=["res://.godot/imported/spritesheet.png-2ba023c93b1dbe2a542ba278fbefb1bf.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/enemigo_2.png"
+dest_files=["res://.godot/imported/enemigo_2.png-4ce3d4566e9ef6f1c19d47f211e042d7.ctex"]
 
 [params]
 

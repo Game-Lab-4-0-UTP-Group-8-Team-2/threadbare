@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw6v50ahhxkjl"
-path="res://.godot/imported/23858_1154621610_1_-removebg-preview.png-2e74f8901f0a815bab20e907f8c09327.ctex"
+uid="uid://cgnnrtabjdlc7"
+path="res://.godot/imported/defeated_enemy.png-664d4d8b4dae46df5b6cb34e9a8c3eb9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/23858_1154621610_1_-removebg-preview.png"
-dest_files=["res://.godot/imported/23858_1154621610_1_-removebg-preview.png-2e74f8901f0a815bab20e907f8c09327.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/defeated_enemy.png"
+dest_files=["res://.godot/imported/defeated_enemy.png-664d4d8b4dae46df5b6cb34e9a8c3eb9.ctex"]
 
 [params]
 

@@ -80,7 +80,7 @@ projectile_sprite_frames = ExtResource("9_q5llu")
 projectile_hit_sound_stream = ExtResource("10_q5llu")
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("4_jvhk4")]
-position = Vector2(101, 616)
+position = Vector2(159, 604)
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player"]
 zoom = Vector2(2, 2)

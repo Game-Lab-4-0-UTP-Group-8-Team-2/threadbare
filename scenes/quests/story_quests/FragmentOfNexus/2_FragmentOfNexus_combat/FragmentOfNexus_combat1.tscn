@@ -69,7 +69,7 @@ animation = &"idle"
 frame_progress = 0.738184
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("5_n83a3")]
-position = Vector2(1104, 1323)
+position = Vector2(1110, 1275)
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player"]
 zoom = Vector2(2, 2)

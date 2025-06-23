@@ -18,8 +18,8 @@ enum Mode {
 }
 
 const REQUIRED_ANIMATION_FRAMES: Dictionary[StringName, int] = {
-	&"idle": 10,
-	&"walk": 6,
+	&"idle": 1,
+	&"walk": 12,
 	&"attack_01": 4,
 	&"defeated": 11,
 }

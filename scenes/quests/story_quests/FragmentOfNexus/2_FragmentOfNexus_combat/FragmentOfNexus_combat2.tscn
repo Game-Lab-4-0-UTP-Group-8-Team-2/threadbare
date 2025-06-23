@@ -68,7 +68,7 @@ sprite_frames = ExtResource("5_okb4j")
 animation = &"idle"
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("5_f1u1x")]
-position = Vector2(217, 1059)
+position = Vector2(217, 1022)
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player"]
 zoom = Vector2(2, 2)

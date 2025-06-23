@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://nme3l5w246ou"]
+[gd_scene load_steps=26 format=4 uid="uid://nme3l5w246ou"]
 
 [ext_resource type="Script" uid="uid://dnp0tjloec2d7" path="res://scenes/game_logic/stealth_game_logic.gd" id="1_1x2go"]
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="1_lwqdc"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://bfuphiop35dtu" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/sprite_2d.gd" id="13_q3abo"]
 [ext_resource type="Texture2D" uid="uid://cf6v2pokp2w1c" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/batery pixel.png" id="14_q3abo"]
 [ext_resource type="AudioStream" uid="uid://c23hr5c8n6p3g" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/FragmentOfNexus_stealth_components/la-marche-funeste-323574.mp3" id="17_0o4pm"]
+[ext_resource type="Texture2D" uid="uid://3np7ey3u62en" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/light.png" id="21_0o4pm"]
 
 [sub_resource type="Curve2D" id="Curve2D_vnsq3"]
 _data = {
@@ -189,11 +190,11 @@ tile_set = ExtResource("12_6teqo")
 
 [node name="Techo" type="TileMapLayer" parent="TilesSets"]
 z_index = 1
-tile_map_data = PackedByteArray("AAAMAAkADwAAAAYAAFAMAAsADwACAAYAAFARAAEADwAAAAYAAFARAAIADwADAAYAAFARAAQADwABAAYAAFARAAUADwACAAYAAFARAAYADwADAAYAAFARAAcADwAAAAYAAFARAAMADwAAAAYAAFASAA0ADwAAAAYAAAATAA0ADwADAAYAAAAXAA0ADwADAAYAAAAWAA0ADwAAAAYAAAAUAA0ADwAAAAYAAAAaAAQADwABAAYAAAAaAAgADwABAAYAAAAZAAoADwAAAAYAAFAZAAsADwADAAYAAFAbAAQADwACAAYAAAAbAAgADwACAAYAAAAYAA0ADwADAAYAAAAkABEADwAAAAYAAAAlABEADwABAAYAAAAmABEADwACAAYAAAAnABEADwABAAYAAAAoABEADwACAAYAAAApABEADwADAAYAAAAkAA4ADwAAAAYAAAAlAA4ADwABAAYAAAAmAA4ADwACAAYAAAAnAA4ADwABAAYAAAAoAA4ADwACAAYAAAApAA4ADwADAAYAAAAMAAoADwABAAYAAFASAAkADwAAAAYAAAATAAkADwADAAYAAAAVAAkADwADAAYAAAAUAAkADwAAAAYAAAAWAAkADwAAAAYAAAAXAAkADwADAAYAAAATABEADwABAAYAAAAUABEADwACAAYAAAAVABEADwABAAYAAAAWABEADwACAAYAAAAXABEADwADAAYAAAA=")
+tile_map_data = PackedByteArray("AAAMAAkADwAAAAYAAFAMAAsADwACAAYAAFARAAEADwAAAAYAAFARAAIADwADAAYAAFARAAQADwABAAYAAFARAAUADwACAAYAAFARAAYADwADAAYAAFARAAcADwAAAAYAAFARAAMADwAAAAYAAFASAA0ADwAAAAYAAAATAA0ADwADAAYAAAAXAA0ADwADAAYAAAAWAA0ADwAAAAYAAAAUAA0ADwAAAAYAAAAaAAQADwABAAYAAAAaAAgADwABAAYAAAAZAAoADwAAAAYAAFAZAAsADwADAAYAAFAbAAQADwACAAYAAAAbAAgADwACAAYAAAAYAA0ADwADAAYAAAAkABEADwAAAAYAAAAlABEADwABAAYAAAAmABEADwACAAYAAAAnABEADwABAAYAAAAoABEADwACAAYAAAApABEADwADAAYAAAAkAA4ADwAAAAYAAAAlAA4ADwABAAYAAAAmAA4ADwACAAYAAAAnAA4ADwABAAYAAAAoAA4ADwACAAYAAAApAA4ADwADAAYAAAAMAAoADwABAAYAAFASAAkADwAAAAYAAAATAAkADwADAAYAAAAVAAkADwADAAYAAAAUAAkADwAAAAYAAAAWAAkADwAAAAYAAAAXAAkADwADAAYAAAATABEADwABAAYAAAAUABEADwACAAYAAAAVABEADwABAAYAAAAWABEADwACAAYAAAAXABEADwADAAYAAAAVAA0ADwAAAAYAAAA=")
 tile_set = ExtResource("12_6teqo")
 
 [node name="Sombras" type="TileMapLayer" parent="TilesSets"]
-tile_map_data = PackedByteArray("AAAMAAkADwAEAAYAADAMAAsADwAEAAYAADASAA4ADwAFAAYAAAAUAA4ADwAFAAYAAAAWAA4ADwAFAAYAAAATAA4ADwAEAAYAAAAXAA4ADwAEAAYAAAAVAA4ADwAEAAYAAAAZAAoADwAGAAYAAFAZAAsADwAHAAYAAFAYAA4ADwAFAAYAAAApABIADwAHAAYAAAAlABIADwAHAAYAAAAnABIADwAHAAYAAAAoABIADwAGAAYAAAAmABIADwAGAAYAAAAkABIADwAGAAYAAAAkAA8ADwAGAAYAAAAlAA8ADwAHAAYAAAAmAA8ADwAGAAYAAAAnAA8ADwAHAAYAAAAoAA8ADwAGAAYAAAApAA8ADwAHAAYAAAA=")
+tile_map_data = PackedByteArray("AAAMAAkADwAEAAYAADAMAAsADwAEAAYAADASAA4ADwAFAAYAAAAUAA4ADwAFAAYAAAAWAA4ADwAFAAYAAAATAA4ADwAEAAYAAAAXAA4ADwAEAAYAAAAVAA4ADwAEAAYAAAAZAAoADwAGAAYAAFAZAAsADwAHAAYAAFAYAA4ADwAFAAYAAAApABIADwAHAAYAAAAlABIADwAHAAYAAAAnABIADwAHAAYAAAAoABIADwAGAAYAAAAmABIADwAGAAYAAAAkABIADwAGAAYAAAAkAA8ADwAGAAYAAAAlAA8ADwAHAAYAAAAmAA8ADwAGAAYAAAAnAA8ADwAHAAYAAAAoAA8ADwAGAAYAAAApAA8ADwAHAAYAAAAYAAoADwAFAAYAABAXAAoADwAEAAYAABAWAAoADwAFAAYAABAVAAoADwAEAAYAABAUAAoADwAFAAYAABATAAoADwAEAAYAABASAAoADwAFAAYAABA=")
 tile_set = ExtResource("12_6teqo")
 
 [node name="Sombras verticales" type="TileMapLayer" parent="TilesSets"]
@@ -215,3 +216,261 @@ stream = ExtResource("17_0o4pm")
 autoplay = true
 bus = &"Music"
 parameters/looping = true
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(155, 434)
+
+[node name="PointLight2D" type="PointLight2D" parent="Node2D"]
+position = Vector2(6, -352)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Node2D"]
+position = Vector2(68, -355)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Node2D"]
+position = Vector2(130, -354)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D4" type="PointLight2D" parent="Node2D"]
+position = Vector2(190, -362)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Node2D"]
+position = Vector2(620, 312)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D6" type="PointLight2D" parent="Node2D"]
+position = Vector2(615, 272)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D7" type="PointLight2D" parent="Node2D"]
+position = Vector2(621, 230)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D8" type="PointLight2D" parent="Node2D"]
+position = Vector2(937, -65)
+scale = Vector2(0.119629, 0.119629)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D9" type="PointLight2D" parent="Node2D"]
+position = Vector2(938, -108)
+scale = Vector2(0.119629, 0.119629)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D10" type="PointLight2D" parent="Node2D"]
+position = Vector2(939, -149)
+scale = Vector2(0.119629, 0.119629)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D11" type="PointLight2D" parent="Node2D"]
+position = Vector2(900, -354)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D12" type="PointLight2D" parent="Node2D"]
+position = Vector2(1090, 716)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D13" type="PointLight2D" parent="Node2D"]
+position = Vector2(1126, 713)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D14" type="PointLight2D" parent="Node2D"]
+position = Vector2(1171, 712)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D15" type="PointLight2D" parent="Node2D"]
+position = Vector2(1214, 710)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D16" type="PointLight2D" parent="Node2D"]
+position = Vector2(1253, 708)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D17" type="PointLight2D" parent="Node2D"]
+position = Vector2(1302, 711)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D18" type="PointLight2D" parent="Node2D"]
+position = Vector2(963, 735)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D19" type="PointLight2D" parent="Node2D"]
+position = Vector2(1476, 736)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D20" type="PointLight2D" parent="Node2D"]
+position = Vector2(1542, 737)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D21" type="PointLight2D" parent="Node2D"]
+position = Vector2(1604, 736)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D22" type="PointLight2D" parent="Node2D"]
+position = Vector2(2565, 797)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D23" type="PointLight2D" parent="Node2D"]
+position = Vector2(2456, 717)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D24" type="PointLight2D" parent="Node2D"]
+position = Vector2(2396, 718)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D25" type="PointLight2D" parent="Node2D"]
+position = Vector2(2363, 718)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D26" type="PointLight2D" parent="Node2D"]
+position = Vector2(2316, 720)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D27" type="PointLight2D" parent="Node2D"]
+position = Vector2(2286, 714)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D28" type="PointLight2D" parent="Node2D"]
+position = Vector2(2232, 718)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D29" type="PointLight2D" parent="Node2D"]
+position = Vector2(2453, 517)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D30" type="PointLight2D" parent="Node2D"]
+position = Vector2(2415, 516)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D31" type="PointLight2D" parent="Node2D"]
+position = Vector2(2354, 518)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D32" type="PointLight2D" parent="Node2D"]
+position = Vector2(2339, 507)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D33" type="PointLight2D" parent="Node2D"]
+position = Vector2(2280, 516)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D34" type="PointLight2D" parent="Node2D"]
+position = Vector2(2233, 516)
+scale = Vector2(0.187744, 0.174072)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D35" type="PointLight2D" parent="Node2D"]
+position = Vector2(2309, 289)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D36" type="PointLight2D" parent="Node2D"]
+position = Vector2(2247, 288)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D37" type="PointLight2D" parent="Node2D"]
+position = Vector2(2367, 285)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D38" type="PointLight2D" parent="Node2D"]
+position = Vector2(2495, -350)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D39" type="PointLight2D" parent="Node2D"]
+position = Vector2(2567, -352)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D40" type="PointLight2D" parent="Node2D"]
+position = Vector2(2694, -354)
+scale = Vector2(0.11145, 0.106567)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D41" type="PointLight2D" parent="Node2D"]
+position = Vector2(2625, -343)
+scale = Vector2(0.0576781, 0.055151)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D42" type="PointLight2D" parent="Node2D"]
+position = Vector2(1534, 135)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D43" type="PointLight2D" parent="Node2D"]
+position = Vector2(1570, 137)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D44" type="PointLight2D" parent="Node2D"]
+position = Vector2(1612, 138)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D45" type="PointLight2D" parent="Node2D"]
+position = Vector2(1528, -117)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D46" type="PointLight2D" parent="Node2D"]
+position = Vector2(1571, -119)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D47" type="PointLight2D" parent="Node2D"]
+position = Vector2(1614, -120)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D48" type="PointLight2D" parent="Node2D"]
+position = Vector2(1540, 481)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D49" type="PointLight2D" parent="Node2D"]
+position = Vector2(1598, 482)
+scale = Vector2(0.0947266, 0.0947266)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D50" type="PointLight2D" parent="Node2D"]
+position = Vector2(1737, 420)
+scale = Vector2(0.0197755, 0.0217286)
+texture = ExtResource("21_0o4pm")
+
+[node name="PointLight2D51" type="PointLight2D" parent="Node2D"]
+position = Vector2(1736, 292)
+scale = Vector2(0.0197755, 0.0217286)
+texture = ExtResource("21_0o4pm")

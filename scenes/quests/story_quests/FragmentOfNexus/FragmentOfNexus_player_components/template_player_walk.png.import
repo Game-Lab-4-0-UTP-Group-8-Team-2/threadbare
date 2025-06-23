@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0to111k5bkqh"
-path="res://.godot/imported/FragmentOfNexus_throwing_enemy_defeated.png-f21b35c17f2e83d26f4aaa39110cfb95.ctex"
+uid="uid://bdiau0swwwlvc"
+path="res://.godot/imported/template_player_walk.png-9c639958ba5077b26ac050ef5361bb2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_throwing_enemy_defeated.png"
-dest_files=["res://.godot/imported/FragmentOfNexus_throwing_enemy_defeated.png-f21b35c17f2e83d26f4aaa39110cfb95.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_player_walk.png"
+dest_files=["res://.godot/imported/template_player_walk.png-9c639958ba5077b26ac050ef5361bb2c.ctex"]
 
 [params]
 

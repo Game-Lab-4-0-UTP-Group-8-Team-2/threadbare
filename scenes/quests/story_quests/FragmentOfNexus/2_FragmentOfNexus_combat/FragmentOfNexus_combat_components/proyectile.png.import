@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6gsmcqrdfcjq"
-path="res://.godot/imported/FragmentOfNexus_throwing_enemy_attack.png-51d4cb48a3650085c4b898ab66c5923a.ctex"
+uid="uid://cxpxlga4i1ow5"
+path="res://.godot/imported/proyectile.png-357824078548d811d24108e8a5a0b507.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_throwing_enemy_attack.png"
-dest_files=["res://.godot/imported/FragmentOfNexus_throwing_enemy_attack.png-51d4cb48a3650085c4b898ab66c5923a.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/proyectile.png"
+dest_files=["res://.godot/imported/proyectile.png-357824078548d811d24108e8a5a0b507.ctex"]
 
 [params]
 

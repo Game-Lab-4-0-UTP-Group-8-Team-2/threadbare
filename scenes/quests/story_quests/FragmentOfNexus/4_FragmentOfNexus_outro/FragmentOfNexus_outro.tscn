@@ -102,7 +102,6 @@ animation = &"idle"
 
 [node name="Character" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(-1650, 370)
-scale = Vector2(1.5, 1.5)
 sprite_frames = ExtResource("3_2s1fk")
 animation = &"idle"
 autoplay = "idle"

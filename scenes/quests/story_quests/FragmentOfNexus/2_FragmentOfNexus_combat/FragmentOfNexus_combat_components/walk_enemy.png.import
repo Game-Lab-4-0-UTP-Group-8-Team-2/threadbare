@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dui5t3y6hdjtc"
-path="res://.godot/imported/FragmentOfNexus_projectile.png-0ab5f6cf97a04d4ab8bc483f7edfd8ed.ctex"
+uid="uid://ccjdrov4nc71p"
+path="res://.godot/imported/walk_enemy.png-659908e23ddf362a82cce14e69bb43ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_projectile.png"
-dest_files=["res://.godot/imported/FragmentOfNexus_projectile.png-0ab5f6cf97a04d4ab8bc483f7edfd8ed.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/walk_enemy.png"
+dest_files=["res://.godot/imported/walk_enemy.png-659908e23ddf362a82cce14e69bb43ab.ctex"]
 
 [params]
 

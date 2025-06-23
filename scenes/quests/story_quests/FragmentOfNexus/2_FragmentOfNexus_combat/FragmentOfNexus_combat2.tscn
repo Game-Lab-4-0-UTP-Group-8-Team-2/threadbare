@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://bcgiu401kqd8"]
+[gd_scene load_steps=20 format=4 uid="uid://bcgiu401kqd8"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_e61m3"]
 [ext_resource type="Resource" uid="uid://s7si8us8vkpy" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel2.dialogue" id="2_6iijq"]
@@ -11,6 +11,9 @@
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="7_lgl4x"]
 [ext_resource type="SpriteFrames" uid="uid://0yliimavesdx" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_target_spriteframes.tres" id="8_6iijq"]
 [ext_resource type="Script" uid="uid://hqdquinbimce" path="res://scenes/game_elements/props/teleporter/teleporter/components/teleporter.gd" id="9_6iijq"]
+[ext_resource type="AudioStream" uid="uid://cf2b43burybmw" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/laser-gun-81720.mp3" id="9_leymq"]
+[ext_resource type="SpriteFrames" uid="uid://bh6n3yabss5q4" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_projectile_spriteframes.tres" id="10_lgl4x"]
+[ext_resource type="AudioStream" uid="uid://voecqdu4n2pt" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/pow-90398.mp3" id="11_lgl4x"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="11_ncm7p"]
 [ext_resource type="AudioStream" uid="uid://dur6wu7qx6kb7" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/fx7-88550.mp3" id="11_p5ha3"]
 [ext_resource type="AudioStream" uid="uid://btp3h8ycl057y" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/fatal-resonance-281390.mp3" id="12_hf513"]
@@ -80,11 +83,17 @@ editor_draw_limits = true
 position = Vector2(672, 631)
 throwing_period = 3.0
 sprite_frames = ExtResource("7_e61m3")
+attack_sound_stream = ExtResource("9_leymq")
+projectile_sprite_frames = ExtResource("10_lgl4x")
+projectile_hit_sound_stream = ExtResource("11_lgl4x")
 
 [node name="ThrowingNPC" parent="OnTheGround" instance=ExtResource("6_leymq")]
 position = Vector2(1312, 635)
 throwing_period = 3.0
 sprite_frames = ExtResource("7_e61m3")
+attack_sound_stream = ExtResource("9_leymq")
+projectile_sprite_frames = ExtResource("10_lgl4x")
+projectile_hit_sound_stream = ExtResource("11_lgl4x")
 
 [node name="Target" parent="OnTheGround" instance=ExtResource("7_lgl4x")]
 position = Vector2(672, 238)
@@ -97,6 +106,7 @@ color = Color(1, 1, 1, 1)
 stream = ExtResource("11_p5ha3")
 autoplay = true
 max_distance = 400.0
+bus = &"SFX"
 parameters/looping = true
 
 [node name="Target2" parent="OnTheGround" instance=ExtResource("7_lgl4x")]
@@ -110,6 +120,7 @@ color = Color(1, 1, 1, 1)
 stream = ExtResource("11_p5ha3")
 autoplay = true
 max_distance = 400.0
+bus = &"SFX"
 parameters/looping = true
 
 [node name="Target3" parent="OnTheGround" instance=ExtResource("7_lgl4x")]
@@ -123,6 +134,7 @@ color = Color(1, 1, 1, 1)
 stream = ExtResource("11_p5ha3")
 autoplay = true
 max_distance = 400.0
+bus = &"SFX"
 parameters/looping = true
 
 [node name="Target4" parent="OnTheGround" instance=ExtResource("7_lgl4x")]
@@ -136,6 +148,7 @@ color = Color(1, 1, 1, 1)
 stream = ExtResource("11_p5ha3")
 autoplay = true
 max_distance = 400.0
+bus = &"SFX"
 parameters/looping = true
 
 [node name="Node2D" type="Node2D" parent="OnTheGround"]
@@ -163,3 +176,4 @@ parameters/looping = true
 
 [node name="doorsound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_s8yfi")
+bus = &"SFX"

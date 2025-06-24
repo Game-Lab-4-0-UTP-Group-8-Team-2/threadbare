@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://bfr7o6kdkowbc"]
+[gd_scene load_steps=22 format=4 uid="uid://bfr7o6kdkowbc"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_rc6wj"]
 [ext_resource type="Resource" uid="uid://dpthmphce1pny" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel3.dialogue" id="2_uygp4"]
@@ -18,6 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://voecqdu4n2pt" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/pow-90398.mp3" id="10_q5llu"]
 [ext_resource type="AudioStream" uid="uid://dur6wu7qx6kb7" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/fx7-88550.mp3" id="11_wcafs"]
 [ext_resource type="AudioStream" uid="uid://btp3h8ycl057y" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/fatal-resonance-281390.mp3" id="11_x0onm"]
+[ext_resource type="SpriteFrames" uid="uid://bjslq0h0elct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_sierra7.tres" id="12_mr73x"]
 [ext_resource type="AudioStream" uid="uid://cll8wdn4wya70" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/metal-door-sound.mp3" id="15_dftcr"]
 
 [sub_resource type="Resource" id="Resource_a51xm"]
@@ -64,10 +65,11 @@ tile_set = ExtResource("3_sqgfg")
 
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
+texture_filter = 1
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(98, 643)
-scale = Vector2(1.5, 1.5)
+position = Vector2(104, 591)
+scale = Vector2(2, 2)
 sprite_frames = ExtResource("5_c6a4f")
 animation = &"idle"
 
@@ -80,7 +82,8 @@ projectile_sprite_frames = ExtResource("9_q5llu")
 projectile_hit_sound_stream = ExtResource("10_q5llu")
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("4_jvhk4")]
-position = Vector2(159, 604)
+position = Vector2(170, 604)
+sprite_frames = ExtResource("12_mr73x")
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player"]
 zoom = Vector2(2, 2)
@@ -199,6 +202,12 @@ next_scene = "uid://ef3jnjg60pf4"
 item = SubResource("Resource_a51xm")
 collected_dialogue = ExtResource("2_uygp4")
 dialogue_title = &"well_done"
+
+[node name="Alfa recluta2" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(1951, 639)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("5_c6a4f")
+animation = &"idle"
 
 [node name="ScreenOverlay" type="CanvasLayer" parent="."]
 

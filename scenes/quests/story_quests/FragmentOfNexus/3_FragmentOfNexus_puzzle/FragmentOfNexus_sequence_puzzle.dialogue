@@ -1,12 +1,31 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-This scene includes objects that the player must tap in a particular sequence, and signs with clues on them.
-Select a "SequencePuzzleStep" node and change the array in the "Sequence" field.
-The first melody is set to yellow, green, blue. This means that you should tap those objects in that order.
-Can you guess the second sequence without looking at the Inspector?
+
+[color=#380273]ALFA-RECLUTA[/color] \nAquí estamos... Dos puertas, y todas cerradas.
+
+[color=#88ccff]SIERRA-7[/color] \n¿Algún acceso alternativo?
+
+[color=#380273]ALFA-RECLUTA[/color] \nHay terminales al lado de cada puerta. Si las hackeas, deberían abrirse.
+
+[color=#88ccff]SIERRA-7[/color] \nPerfecto. Veré qué puedo hacer.
+
+[color=#ffa500]BT-Δ1[/color] \nAnomalía en sistemas de acceso... puedo guiarte.
+
+[color=#88ccff]SIERRA-7[/color] \nBien. Nos abriremos camino.
+
 => END
+
 ~ well_done
-Well done! You can add more steps to the puzzle. Just remember to add them to the "SequencePuzzle" node, and add a new hint sign for each one.
-Using what you've learned so far, what kind of challenge can you create here? Have fun!
+
+[color=#88ccff]SIERRA-7[/color] \n(Recuperando el aliento) Aquí... esta memoria...
+
+[color=#ffa500]BT-Δ1[/color] \nFragmento de memoria identificado. Sincronización en progreso.
+
+[color=#88ccff]SIERRA-7[/color] \nRecuerdo esta puerta... esta batalla. Ahora lo veo claro.
+
+[color=#ffa500]BT-Δ1[/color] \nRecuperación parcial completada. Listos para continuar.
+
+[color=#88ccff]SIERRA-7[/color] \nPerfecto. Ahora sabemos qué sigue.
+
 => END

@@ -209,11 +209,12 @@ editor_draw_limits = true
 
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
+texture_filter = 1
 position = Vector2(-15, -40)
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(-56, 509)
-scale = Vector2(1.5, 1.5)
+scale = Vector2(2, 2)
 sprite_frames = ExtResource("2_c1kqb")
 animation = &"idle"
 autoplay = "idle"

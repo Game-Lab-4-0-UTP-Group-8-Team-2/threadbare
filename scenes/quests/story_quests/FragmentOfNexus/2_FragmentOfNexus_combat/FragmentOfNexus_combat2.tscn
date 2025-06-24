@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=4 uid="uid://bcgiu401kqd8"]
+[gd_scene load_steps=21 format=4 uid="uid://bcgiu401kqd8"]
 
 [ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_e61m3"]
 [ext_resource type="Resource" uid="uid://s7si8us8vkpy" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel2.dialogue" id="2_6iijq"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="6_leymq"]
 [ext_resource type="SpriteFrames" uid="uid://6ukf7oon82l1" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_throwing_enemy.tres" id="7_e61m3"]
 [ext_resource type="PackedScene" uid="uid://y8ha8abfyap2" path="res://scenes/game_elements/props/filling_barrel/filling_barrel.tscn" id="7_lgl4x"]
+[ext_resource type="SpriteFrames" uid="uid://bjslq0h0elct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_sierra7.tres" id="7_tms70"]
 [ext_resource type="SpriteFrames" uid="uid://0yliimavesdx" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_target_spriteframes.tres" id="8_6iijq"]
 [ext_resource type="Script" uid="uid://hqdquinbimce" path="res://scenes/game_elements/props/teleporter/teleporter/components/teleporter.gd" id="9_6iijq"]
 [ext_resource type="AudioStream" uid="uid://cf2b43burybmw" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/laser-gun-81720.mp3" id="9_leymq"]
@@ -60,15 +61,17 @@ tile_set = ExtResource("3_s8yfi")
 
 [node name="OnTheGround" type="Node2D" parent="."]
 y_sort_enabled = true
+texture_filter = 1
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
-position = Vector2(162, 1022)
-scale = Vector2(1.5, 1.5)
+position = Vector2(163, 1006)
+scale = Vector2(2, 2)
 sprite_frames = ExtResource("5_okb4j")
 animation = &"idle"
 
 [node name="Player" parent="OnTheGround" instance=ExtResource("5_f1u1x")]
-position = Vector2(217, 1022)
+position = Vector2(226, 1020)
+sprite_frames = ExtResource("7_tms70")
 
 [node name="Camera2D" type="Camera2D" parent="OnTheGround/Player"]
 zoom = Vector2(2, 2)

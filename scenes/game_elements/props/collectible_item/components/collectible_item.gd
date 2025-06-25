@@ -58,7 +58,7 @@ func _set_item(new_value: InventoryItem) -> void:
 		sprite_2d.texture = item.get_world_texture() if item else null
 
 	if interact_area:
-		interact_area.action = "Collect " + item.type_name() if item else "Collect"
+		interact_area.action = "Recoger " + item.type_name() if item else "Collect"
 
 	update_configuration_warnings()
 

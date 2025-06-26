@@ -16,8 +16,8 @@
 [ext_resource type="SpriteFrames" uid="uid://bwvt7stdfmyq4" path="res://scenes/quests/story_quests/FragmentOfNexus/3_FragmentOfNexus_puzzle/FragmentOfNexus_sign.tres" id="12_0y57f"]
 [ext_resource type="Script" uid="uid://ccc78coj2b1li" path="res://scenes/game_logic/sequence_puzzle_step.gd" id="13_mdolg"]
 [ext_resource type="PackedScene" uid="uid://fuhl3l6gxq5k" path="res://scenes/game_elements/props/collectible_item/collectible_item.tscn" id="14_hctwb"]
-[ext_resource type="Script" uid="uid://bgmwplmj3bfls" path="res://scenes/globals/game_state/inventory/inventory_item.gd" id="15_81rpi"]
 [ext_resource type="PackedScene" uid="uid://covsdqqsd6rsy" path="res://scenes/game_elements/props/sign/sign.tscn" id="17_40kbr"]
+[ext_resource type="Script" uid="uid://bfdicfwubo3io" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/extended_inventory_item.gd" id="17_cfqlk"]
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="18_d1sp5"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="19_cwmn6"]
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="20_cfqlk"]
@@ -25,11 +25,12 @@
 [ext_resource type="AudioStream" uid="uid://cll8wdn4wya70" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/metal-door-sound.mp3" id="21_sm7li"]
 [ext_resource type="AudioStream" uid="uid://dymrq3tx0wc8m" path="res://scenes/quests/story_quests/FragmentOfNexus/3_FragmentOfNexus_puzzle/mesa-10550.mp3" id="24_cfqlk"]
 
-[sub_resource type="Resource" id="Resource_u8qfb"]
-script = ExtResource("15_81rpi")
+[sub_resource type="Resource" id="Resource_rne0m"]
+script = ExtResource("17_cfqlk")
+extended_type = 1
 name = ""
-type = 2
-metadata/_custom_type_script = "uid://bgmwplmj3bfls"
+type = 0
+metadata/_custom_type_script = "uid://bfdicfwubo3io"
 
 [node name="SequencePuzzleTemplate" type="Node2D"]
 
@@ -192,7 +193,7 @@ hint_sign = NodePath("../../Signs/HintSign2")
 position = Vector2(3839, 277)
 revealed = false
 next_scene = "uid://dlsfwxxjkgoia"
-item = SubResource("Resource_u8qfb")
+item = SubResource("Resource_rne0m")
 collected_dialogue = ExtResource("21_icmmi")
 dialogue_title = &"well_done"
 

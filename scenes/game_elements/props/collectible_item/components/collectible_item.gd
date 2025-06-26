@@ -35,7 +35,7 @@ class_name CollectibleItem extends Node2D
 @onready var interact_area: InteractArea = $InteractArea
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var sprite_2d: Sprite2D = $Sprite2D
-@onready var appear_sound: AudioStreamPlayer = %AppearSound
+@onready var appear_sound: AudioStreamPlayer = %CollectedSound
 
 
 func _validate_property(property: Dictionary) -> void:

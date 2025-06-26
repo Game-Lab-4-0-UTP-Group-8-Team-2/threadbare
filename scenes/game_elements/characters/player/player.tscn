@@ -11,8 +11,8 @@
 [ext_resource type="Script" uid="uid://kni2yl26matc" path="res://scenes/game_elements/characters/player/components/player_fighting.gd" id="7_5gtgg"]
 [ext_resource type="Texture2D" uid="uid://dda0lxfswrncy" path="res://scenes/game_elements/characters/player/components/blow.png" id="9_je7p5"]
 [ext_resource type="AudioStream" uid="uid://crfylo055wa8e" path="res://scenes/game_elements/characters/player/components/blow.wav" id="10_fm80t"]
-[ext_resource type="AudioStream" uid="uid://cx6jv2cflrmqu" path="res://assets/third_party/sounds/characters/player/Foot.ogg" id="11_blfj0"]
 [ext_resource type="Texture2D" uid="uid://dxaq5piwxqnht" path="res://scenes/game_elements/characters/player/components/dust.png" id="12_3in67"]
+[ext_resource type="AudioStream" uid="uid://bam1kcdescofu" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/sounds_efects/pisadassmokeenlashojas-001.wav" id="13_j0tly"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_j0tly"]
 blend_mode = 1
@@ -429,7 +429,7 @@ _data = {
 &"walk": SubResource("Animation_qek5x")
 }
 
-[node name="Player" type="CharacterBody2D" groups=["player"]]
+[node name="Player2" type="CharacterBody2D" groups=["player"]]
 collision_mask = 531
 script = ExtResource("1_g2els")
 
@@ -545,7 +545,6 @@ script = ExtResource("7_0owmy")
 
 [node name="WalkSound" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
-stream = ExtResource("11_blfj0")
-volume_db = -5.0
-pitch_scale = 7.0
+stream = ExtResource("13_j0tly")
+volume_db = 24.0
 bus = &"SFX"

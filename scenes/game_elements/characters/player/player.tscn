@@ -471,7 +471,7 @@ script = ExtResource("6_3in67")
 character = NodePath("../..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerInteraction/InteractZone"]
-position = Vector2(47, -30)
+position = Vector2(49, -45)
 shape = SubResource("RectangleShape2D_blfj0")
 
 [node name="InteractMarker" type="Marker2D" parent="PlayerInteraction"]
@@ -546,5 +546,5 @@ script = ExtResource("7_0owmy")
 [node name="WalkSound" type="AudioStreamPlayer2D" parent="."]
 unique_name_in_owner = true
 stream = ExtResource("13_j0tly")
-volume_db = 24.0
+volume_db = 15.943
 bus = &"SFX"

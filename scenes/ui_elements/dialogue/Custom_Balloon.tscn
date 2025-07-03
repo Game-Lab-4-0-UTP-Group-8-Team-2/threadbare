@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://eo5uyhxebti3"]
+
+[ext_resource type="PackedScene" uid="uid://dhydhpp43urah" path="res://scenes/ui_elements/dialogue/balloon.tscn" id="1_cngvc"]
+[ext_resource type="Script" uid="uid://d2pwg3yna6oht" path="res://scenes/ui_elements/dialogue/custom_balloon.gd" id="2_jydwp"]
+
+[node name="DialogueBalloon" instance=ExtResource("1_cngvc")]
+script = ExtResource("2_jydwp")
+
+[node name="HBoxCharacter" type="HBoxContainer" parent="Balloon/PanelContainer/VBoxContainer/HBoxContainer" index="0"]
+layout_mode = 2
+
+[node name="TextureCharacter" type="TextureRect" parent="Balloon/PanelContainer/VBoxContainer/HBoxContainer/HBoxCharacter" index="0"]
+layout_mode = 2

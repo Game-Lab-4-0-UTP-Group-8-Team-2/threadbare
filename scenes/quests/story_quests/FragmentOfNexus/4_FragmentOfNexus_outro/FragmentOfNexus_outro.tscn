@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dlsfwxxjkgoia"]
+[gd_scene load_steps=13 format=4 uid="uid://dlsfwxxjkgoia"]
 
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_7xyvu"]
 [ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="2_7xyvu"]
@@ -6,7 +6,12 @@
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="4_bx64c"]
 [ext_resource type="Script" uid="uid://x1mxt6bmei2o" path="res://scenes/ui_elements/cinematic/cinematic.gd" id="4_k3uw2"]
 [ext_resource type="AudioStream" uid="uid://c2givtkwfnfvp" path="res://scenes/quests/story_quests/FragmentOfNexus/4_FragmentOfNexus_outro/template_outro_components/plastic-flowers-10122.mp3" id="5_2s1fk"]
+[ext_resource type="SpriteFrames" uid="uid://dyd3hymi0xwgj" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/FragmentOfNexus_BT.tres" id="5_k3uw2"]
 [ext_resource type="Resource" uid="uid://cpg8mt2b7pmma" path="res://scenes/quests/story_quests/FragmentOfNexus/4_FragmentOfNexus_outro/template_outro_components/FragmentOfNexus_outro.dialogue" id="5_mc436"]
+
+[sub_resource type="GDScript" id="GDScript_k3uw2"]
+script/source = "extends Node2D
+"
 
 [sub_resource type="Animation" id="Animation_bx64c"]
 length = 0.001
@@ -33,6 +38,30 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [&"idle"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Character2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-1536, 273)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Character2:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"walk"]
 }
 
 [sub_resource type="Animation" id="Animation_7xyvu"]
@@ -62,6 +91,30 @@ tracks/1/keys = {
 "update": 1,
 "values": [&"walk", &"idle"]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Character2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1536, 273), Vector2(475, 273)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Character2:animation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [&"walk", &"stop"]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2s1fk"]
 _data = {
@@ -73,7 +126,6 @@ _data = {
 texture_filter = 1
 
 [node name="HUD" parent="." instance=ExtResource("1_7xyvu")]
-visible = false
 
 [node name="TileMapLayers" type="Node2D" parent="."]
 texture_filter = 1
@@ -94,6 +146,7 @@ tile_set = ExtResource("2_7xyvu")
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(1762, 199)
+script = SubResource("GDScript_k3uw2")
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(614, 378)
@@ -116,6 +169,13 @@ limit_right = 2750
 limit_bottom = 1200
 position_smoothing_enabled = true
 editor_draw_limits = true
+
+[node name="Character2" type="AnimatedSprite2D" parent="OnTheGround"]
+position = Vector2(-1536, 273)
+scale = Vector2(1.205, 1.205)
+sprite_frames = ExtResource("5_k3uw2")
+animation = &"walk"
+autoplay = "walk"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="OnTheGround"]
 libraries = {

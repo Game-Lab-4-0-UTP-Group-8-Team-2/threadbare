@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b745wq6kkj51u"]
+
+[ext_resource type="PackedScene" uid="uid://dhydhpp43urah" path="res://scenes/ui_elements/dialogue/balloon.tscn" id="1_8rbmk"]
+[ext_resource type="Script" uid="uid://cntlcu4xuxq6q" path="res://scenes/quests/story_quests/FragmentOfNexus/custom_balloon.gd" id="2_q3ss1"]
+[ext_resource type="Texture2D" uid="uid://1ujvipwqp1kj" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/espada.png" id="3_24ywl"]
+
+[node name="DialogueBalloon" instance=ExtResource("1_8rbmk")]
+script = ExtResource("2_q3ss1")
+next_action = &"ui_accept"
+skip_action = &"ui_cancel"
+
+[node name="CharacterBox" type="HBoxContainer" parent="Balloon/PanelContainer/VBoxContainer" index="1"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CharacterImage" type="TextureRect" parent="Balloon/PanelContainer/VBoxContainer/CharacterBox" index="0"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_24ywl")
+stretch_mode = 4

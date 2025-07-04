@@ -18,14 +18,14 @@ do change_image(sierra_image)
 
 ~ well_done
 do change_image(sierra_image)
-[color=#88ccff]SIERRA-7[/color] \n(Recuperando el aliento) Aquí... esta memoria...
+[color=#2e8b99]SIERRA-7[/color] \n(Recuperando el aliento) Aquí... esta memoria...
 do change_image(bt_image)
 [color=#ffa500]BT-1[/color] \nFragmento de memoria identificado. Sincronización en progreso.
 do change_image(sierra_image)
-[color=#88ccff]SIERRA-7[/color] \nRecuerdo esta puerta... esta batalla. Ahora lo veo claro.
+[color=#2e8b99]SIERRA-7[/color] \nRecuerdo esta puerta... esta batalla. Ahora lo veo claro.
 do change_image(bt_image)
 [color=#ffa500]BT-1[/color] \nRecuperación parcial completada. Listos para continuar.
 do change_image(sierra_image)
-[color=#88ccff]SIERRA-7[/color] \nPerfecto. Ahora sabemos qué sigue.
+[color=#2e8b99]SIERRA-7[/color] \nPerfecto. Ahora sabemos qué sigue.
 
 => END

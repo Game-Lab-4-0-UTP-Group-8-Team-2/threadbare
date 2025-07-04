@@ -10,7 +10,7 @@ do change_image(alfa_image)
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nPerfecto. Veré qué puedo hacer.
 do change_image(bt_image)
-[color=#ffa500]BT-Δ1[/color] \nAnomalía en sistemas de acceso... puedo guiarte.
+[color=#ffa500]BT-1[/color] \nAnomalía en sistemas de acceso... puedo guiarte.
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nBien. Nos abriremos camino.
 
@@ -20,11 +20,11 @@ do change_image(sierra_image)
 do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \n(Recuperando el aliento) Aquí... esta memoria...
 do change_image(bt_image)
-[color=#ffa500]BT-Δ1[/color] \nFragmento de memoria identificado. Sincronización en progreso.
+[color=#ffa500]BT-1[/color] \nFragmento de memoria identificado. Sincronización en progreso.
 do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \nRecuerdo esta puerta... esta batalla. Ahora lo veo claro.
 do change_image(bt_image)
-[color=#ffa500]BT-Δ1[/color] \nRecuperación parcial completada. Listos para continuar.
+[color=#ffa500]BT-1[/color] \nRecuperación parcial completada. Listos para continuar.
 do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \nPerfecto. Ahora sabemos qué sigue.
 

@@ -4,7 +4,7 @@
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \n(Acercándose lentamente) Esta arma... no es solo metal. Es memoria.
 do change_image(bt_image)
-[color=#ffa500]BT-Δ1[/color] \nReconocimiento completo. Espada sincronizada con datos tácticos y emocionales.
+[color=#ffa500]BT-1[/color] \nReconocimiento completo. Espada sincronizada con datos tácticos y emocionales.
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nNo fue forjada para la guerra. Fue entregada... para evitarla.
 do change_image(alfa_image)
@@ -12,7 +12,7 @@ do change_image(alfa_image)
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nNo. Pero tengo algo que antes no tenía... dirección.
 do change_image(bt_image)
-[color=#ffa500]BT-Δ1[/color] \nSistema estable. Energía aumentada. Fragmento restaurado.
+[color=#ffa500]BT-1[/color] \nSistema estable. Energía aumentada. Fragmento restaurado.
 do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nEntonces seguimos. No por lo que perdimos... sino por lo que aún podemos salvar.
 => END

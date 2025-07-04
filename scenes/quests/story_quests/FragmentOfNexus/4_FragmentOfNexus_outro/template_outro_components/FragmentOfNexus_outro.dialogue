@@ -3,21 +3,21 @@
 ~ start
 
 do animation_player.play(&"entry")
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color]\nÚltimo nodo de memoria... acceso autorizado.\nBT... lo recordé todo.
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color]\nConfirmación de sincronía. Unidad Sierra-7 vínculo restaurado al 100 %
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color]\nFuimos parte del experimento para detener la guerra.\nYo acepté... por decisión propia.
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color]\nDestino final encontrado.\nCoordenadas de salto listas.
 
 do animation_player.animation_finished
-
+do change_image(alfa_image)
 [color=#380273]ALFA-RECLUTA[/color]\n¿Van a dejarnos?\n¿Y si vuelven los del consejo...?
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color]\nTienes que creer en algo, recluta.\nHoy sobrevivimos. Mañana… lucharán ustedes.
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color]\nEjecutando salto.\nGracias... Sierra-7.
 
 => END

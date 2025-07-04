@@ -1,13 +1,14 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
+do change_image(archivo_image)
 [color=#0080ff]ARCHIVO-03[/color] \nHas llegado más lejos de lo previsto, Unidad Sierra-7.
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \n¿Esperabas que fallara?
-
+do change_image(archivo_image)
 [color=#0080ff]ARCHIVO-03[/color] \nNo esperaba nada. Solo observo. Aunque... la mayoría no cruza esta zona con vida.
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nNo soy “la mayoría”. Tengo algo que ellos no.
-
+do change_image(archivo_image)
 [color=#0080ff]ARCHIVO-03[/color] \nY lo estás recordando. Sigue avanzando. La memoria... te está esperando.
 => END

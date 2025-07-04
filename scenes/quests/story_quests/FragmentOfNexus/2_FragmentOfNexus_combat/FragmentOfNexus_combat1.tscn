@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=4 uid="uid://5xyjnlkpiw2m"]
 
-[ext_resource type="Script" uid="uid://cp54mgi54nywo" path="res://scenes/game_logic/fill_game_logic.gd" id="1_tk0tb"]
+[ext_resource type="Script" uid="uid://bmjro041gdnsp" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/fill_game_logic_custom.gd" id="1_na8mo"]
 [ext_resource type="Resource" uid="uid://b6744ebcgsu6" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel1.dialogue" id="2_gqx2l"]
 [ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="3_nhil6"]
 [ext_resource type="Script" uid="uid://btb8q1u2hf44s" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/puerta.gd" id="4_bexad"]
@@ -27,7 +27,7 @@ size = Vector2(129, 48)
 y_sort_enabled = true
 
 [node name="FillGameLogic" type="Node" parent="."]
-script = ExtResource("1_tk0tb")
+script = ExtResource("1_na8mo")
 barrels_to_win = 2
 intro_dialogue = ExtResource("2_gqx2l")
 metadata/_custom_type_script = "uid://cp54mgi54nywo"

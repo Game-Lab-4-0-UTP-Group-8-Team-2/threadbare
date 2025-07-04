@@ -1,31 +1,31 @@
 # SPDX-FileCopyrightText: The Threadbare Authors
 # SPDX-License-Identifier: MPL-2.0
 ~ start
-
+do change_image(alfa_image)
 [color=#380273]ALFA-RECLUTA[/color] \nAquí estamos... Dos puertas, y todas cerradas.
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \n¿Algún acceso alternativo?
-
+do change_image(alfa_image)
 [color=#380273]ALFA-RECLUTA[/color] \nHay terminales al lado de cada puerta. Si las hackeas, deberían abrirse.
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nPerfecto. Veré qué puedo hacer.
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color] \nAnomalía en sistemas de acceso... puedo guiarte.
-
+do change_image(sierra_image)
 [color=#2e8b99]SIERRA-7[/color] \nBien. Nos abriremos camino.
 
 => END
 
 ~ well_done
-
+do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \n(Recuperando el aliento) Aquí... esta memoria...
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color] \nFragmento de memoria identificado. Sincronización en progreso.
-
+do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \nRecuerdo esta puerta... esta batalla. Ahora lo veo claro.
-
+do change_image(bt_image)
 [color=#ffa500]BT-Δ1[/color] \nRecuperación parcial completada. Listos para continuar.
-
+do change_image(sierra_image)
 [color=#88ccff]SIERRA-7[/color] \nPerfecto. Ahora sabemos qué sigue.
 
 => END

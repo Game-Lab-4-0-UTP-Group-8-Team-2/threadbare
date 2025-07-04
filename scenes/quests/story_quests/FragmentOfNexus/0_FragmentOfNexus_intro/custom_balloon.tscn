@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://t37fw3ypu6il"]
+
+[ext_resource type="PackedScene" uid="uid://dhydhpp43urah" path="res://scenes/ui_elements/dialogue/balloon.tscn" id="1_03q57"]
+[ext_resource type="Script" uid="uid://biym3pu8nf8fs" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/custom_balloon.gd" id="2_c11he"]
+
+[node name="DialogueBalloon" instance=ExtResource("1_03q57")]
+script = ExtResource("2_c11he")
+next_action = &"ui_accept"
+skip_action = &"ui_cancel"
+
+[node name="CharacterBox" type="HBoxContainer" parent="Balloon/PanelContainer/VBoxContainer" index="2"]
+layout_mode = 2
+
+[node name="CharacterImage" type="TextureRect" parent="Balloon/PanelContainer/VBoxContainer/CharacterBox" index="0"]
+layout_mode = 2

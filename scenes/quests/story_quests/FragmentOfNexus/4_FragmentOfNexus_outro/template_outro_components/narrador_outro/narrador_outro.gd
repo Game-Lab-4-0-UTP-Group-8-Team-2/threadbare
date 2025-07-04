@@ -20,9 +20,11 @@ var esta_tipeando := false
 
 @export var velocidad_tipeo: float = 0.05  # segundos entre letras
 @export var siguiente_escena: String = "res://scenes/world_map/frays_end.tscn"
+@export var animation: AnimationPlayer;
 
 func _ready() ->void:
 	narrador_texto.clear()
+	animation.play("move")
 	mostrar_linea(lineas[linea_actual])
 
 func _unhandled_input( event : InputEvent) ->void:

@@ -1,0 +1,59 @@
+[gd_resource type="SpriteFrames" load_steps=9 format=3 uid="uid://bcbuv32cwlfo6"]
+
+[ext_resource type="Texture2D" uid="uid://d222j31w5x3tj" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/spritesheet.png" id="1_irgnh"]
+[ext_resource type="Texture2D" uid="uid://dlsrce2lwewbn" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/checkpoint.png" id="2_jmu08"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8eve5"]
+atlas = ExtResource("1_irgnh")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_13rge"]
+atlas = ExtResource("1_irgnh")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0dbj"]
+atlas = ExtResource("1_irgnh")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3gxp"]
+atlas = ExtResource("1_irgnh")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h23pv"]
+atlas = ExtResource("2_jmu08")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm6uf"]
+atlas = ExtResource("2_jmu08")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8eve5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_13rge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a0dbj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3gxp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h23pv")
+}],
+"loop": false,
+"name": &"appear",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dm6uf")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}]

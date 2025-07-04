@@ -1,6 +1,7 @@
-[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bf4ecl4s2bb6y"]
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://bf4ecl4s2bb6y"]
 
 [ext_resource type="Texture2D" uid="uid://dvql4g6xy8l0y" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/sprite_nave.png" id="1_a4vxh"]
+[ext_resource type="Texture2D" uid="uid://bdjdiir1661li" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/sprite_nave_estacionada.png" id="2_kx5yq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kx5yq"]
 atlas = ExtResource("1_a4vxh")
@@ -13,6 +14,14 @@ region = Rect2(700, 0, 700, 700)
 [sub_resource type="AtlasTexture" id="AtlasTexture_qgof4"]
 atlas = ExtResource("1_a4vxh")
 region = Rect2(1400, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_luq2g"]
+atlas = ExtResource("2_kx5yq")
+region = Rect2(0, 500, 500, 500)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf2lt"]
+atlas = ExtResource("2_kx5yq")
+region = Rect2(0, 0, 500, 500)
 
 [resource]
 animations = [{
@@ -28,5 +37,16 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_luq2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xf2lt")
+}],
+"loop": true,
+"name": &"idle",
 "speed": 5.0
 }]

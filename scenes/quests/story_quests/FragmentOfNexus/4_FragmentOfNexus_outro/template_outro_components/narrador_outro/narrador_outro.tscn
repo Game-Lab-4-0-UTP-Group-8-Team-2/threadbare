@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cgej8sb1aw85b"]
+[gd_scene load_steps=22 format=3 uid="uid://cgej8sb1aw85b"]
 
 [ext_resource type="Script" uid="uid://bxa8a48udghl8" path="res://scenes/quests/story_quests/FragmentOfNexus/4_FragmentOfNexus_outro/template_outro_components/narrador_outro/narrador_outro.gd" id="1_navjr"]
 [ext_resource type="FontFile" uid="uid://41qao1yxwjt8" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/narrador_components/Geo-Regular.ttf" id="2_dj2tu"]
@@ -17,10 +17,121 @@
 [ext_resource type="Script" uid="uid://clsktjj0e6hsp" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/narrador_components/asteroide_2.gd" id="15_gsyfr"]
 [ext_resource type="Texture2D" uid="uid://buxi7il2f2a0x" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/narrador_components/Parallax elements/asteroid-1.png" id="16_yej8d"]
 [ext_resource type="Script" uid="uid://sa002asnf4hu" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/FragmentOfNexus_intro_components/narrador_components/asteroide_4.gd" id="17_20ajl"]
+[ext_resource type="SpriteFrames" uid="uid://bf4ecl4s2bb6y" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/nave_outro.tres" id="18_p4tpy"]
 
-[node name="NarradorOutro" type="CanvasLayer"]
+[sub_resource type="Animation" id="Animation_a6jkl"]
+resource_name = "move"
+length = 34.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10, 12, 17, 22, 24, 29, 34),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-100, 300), Vector2(954.167, 150), Vector2(2100, 220), Vector2(2100, 500), Vector2(975, 550), Vector2(-150, 500), Vector2(-150, 700), Vector2(1021.88, 900), Vector2(2100, 800)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:animation")
+tracks/1/interp = 0
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/2/interp = 0
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10, 22),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimatedSprite2D:skew")
+tracks/3/interp = 4
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 5, 10, 12, 17, 22, 24, 29, 34),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [-0.261799, 0.0, 0.261799, 0.261799, 0.0, -0.261799, -0.261799, 0.0, 0.261799]
+}
+
+[sub_resource type="Animation" id="Animation_r7ycg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-93, 180)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimatedSprite2D:flip_h")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimatedSprite2D:animation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"default"]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimatedSprite2D:skew")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_chu1s"]
+_data = {
+&"RESET": SubResource("Animation_r7ycg"),
+&"move": SubResource("Animation_a6jkl")
+}
+
+[node name="NarradorOutro" type="CanvasLayer" node_paths=PackedStringArray("animation")]
 follow_viewport_enabled = true
 script = ExtResource("1_navjr")
+animation = NodePath("Nave/AnimationPlayer")
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -29,6 +140,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="NarradorTexto" type="RichTextLabel" parent="Control"]
+z_index = 1
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -168,3 +280,17 @@ rotation = -0.568977
 scale = Vector2(4.99458, 4.99458)
 texture = ExtResource("8_ckcd2")
 offset = Vector2(1.645, 0)
+
+[node name="Nave" type="Node2D" parent="."]
+texture_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Nave"]
+callback_mode_method = 1
+libraries = {
+&"": SubResource("AnimationLibrary_chu1s")
+}
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Nave"]
+position = Vector2(-93, 180)
+scale = Vector2(0.5, 0.5)
+sprite_frames = ExtResource("18_p4tpy")

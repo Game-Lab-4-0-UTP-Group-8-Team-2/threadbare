@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://bf4ecl4s2bb6y"]
+
+[ext_resource type="Texture2D" uid="uid://dvql4g6xy8l0y" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/sprite_nave.png" id="1_a4vxh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kx5yq"]
+atlas = ExtResource("1_a4vxh")
+region = Rect2(0, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adr40"]
+atlas = ExtResource("1_a4vxh")
+region = Rect2(700, 0, 700, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qgof4"]
+atlas = ExtResource("1_a4vxh")
+region = Rect2(1400, 0, 700, 700)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kx5yq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adr40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qgof4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

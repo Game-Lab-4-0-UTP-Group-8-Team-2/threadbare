@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=4 uid="uid://dlsfwxxjkgoia"]
 
 [ext_resource type="PackedScene" uid="uid://cfcgrfvtn04yp" path="res://scenes/ui_elements/hud/hud.tscn" id="1_7xyvu"]
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="2_7xyvu"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="2_7xyvu"]
 [ext_resource type="SpriteFrames" uid="uid://bjslq0h0elct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_sierra7.tres" id="3_2s1fk"]
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="4_bx64c"]
 [ext_resource type="AudioStream" uid="uid://c2givtkwfnfvp" path="res://scenes/quests/story_quests/FragmentOfNexus/4_FragmentOfNexus_outro/template_outro_components/plastic-flowers-10122.mp3" id="5_2s1fk"]

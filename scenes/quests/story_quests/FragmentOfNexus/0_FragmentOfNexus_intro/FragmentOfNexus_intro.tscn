@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=4 uid="uid://b5ujj6rpva85"]
 
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="1_sjo2j"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="1_sjo2j"]
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="2_c1kqb"]
 [ext_resource type="SpriteFrames" uid="uid://bjslq0h0elct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/template_sierra7.tres" id="3_c1kqb"]
 [ext_resource type="Script" uid="uid://bvgqullp42qnx" path="res://scenes/quests/story_quests/FragmentOfNexus/0_FragmentOfNexus_intro/cinematic_custom.gd" id="4_cefyi"]

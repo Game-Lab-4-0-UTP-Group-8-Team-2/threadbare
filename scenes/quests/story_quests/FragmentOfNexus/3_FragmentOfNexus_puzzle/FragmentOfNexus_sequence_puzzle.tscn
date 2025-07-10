@@ -1,6 +1,6 @@
 [gd_scene load_steps=28 format=4 uid="uid://ef3jnjg60pf4"]
 
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="1_0y57f"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="1_0y57f"]
 [ext_resource type="Script" uid="uid://fomsvp5ap64x" path="res://scenes/quests/story_quests/FragmentOfNexus/3_FragmentOfNexus_puzzle/puerta.gd" id="2_1g8nn"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="2_rk86h"]
 [ext_resource type="Script" uid="uid://c68oh8dtr21ti" path="res://scenes/game_logic/sequence_puzzle.gd" id="3_7p7l0"]

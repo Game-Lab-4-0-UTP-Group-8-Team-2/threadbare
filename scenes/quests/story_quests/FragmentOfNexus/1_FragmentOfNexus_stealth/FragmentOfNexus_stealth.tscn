@@ -15,7 +15,7 @@
 [ext_resource type="Resource" uid="uid://dhfid8x8dnnht" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/FragmentOfNexus_stealth_components/FragmentOfNexus_collected.dialogue" id="10_8jx66"]
 [ext_resource type="Script" uid="uid://coeocfw2vkutk" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/checkpoint_custom.gd" id="10_ndjap"]
 [ext_resource type="SpriteFrames" uid="uid://bcbuv32cwlfo6" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/FragmentOfNexus_stealth_components/Fragment_of_Nexus_checkpoint.tres" id="11_g13ix"]
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="12_6teqo"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="12_6teqo"]
 [ext_resource type="Texture2D" uid="uid://do0vx2t3ftfoq" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/aspa.png" id="12_blvgl"]
 [ext_resource type="Resource" uid="uid://b01amqdbwx5w2" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/FragmentOfNexus_stealth_components/FragmentOfNexus_stealth.dialogue" id="12_vke05"]
 [ext_resource type="Script" uid="uid://bfdicfwubo3io" path="res://scenes/quests/story_quests/FragmentOfNexus/1_FragmentOfNexus_stealth/extended_inventory_item.gd" id="13_jxcwk"]

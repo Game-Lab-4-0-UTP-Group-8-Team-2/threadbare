@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bmjro041gdnsp" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/fill_game_logic_custom.gd" id="1_lgl4x"]
 [ext_resource type="Resource" uid="uid://s7si8us8vkpy" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel2.dialogue" id="2_6iijq"]
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="3_s8yfi"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="3_s8yfi"]
 [ext_resource type="Script" uid="uid://btb8q1u2hf44s" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/puerta.gd" id="4_p5ha3"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="5_f1u1x"]
 [ext_resource type="SpriteFrames" uid="uid://bydgm2kyv2x7t" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/alfa-recluta.tres" id="5_okb4j"]

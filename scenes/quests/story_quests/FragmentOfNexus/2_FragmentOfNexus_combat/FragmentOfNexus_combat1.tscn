@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bmjro041gdnsp" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/fill_game_logic_custom.gd" id="1_na8mo"]
 [ext_resource type="Resource" uid="uid://b6744ebcgsu6" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/FragmentOfNexus_nivel1.dialogue" id="2_gqx2l"]
-[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/FragmentOfNexus_tileset.tres" id="3_nhil6"]
+[ext_resource type="TileSet" uid="uid://egtaun720i81" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_map_component/FragmentOfNexus_tileset.tres" id="3_nhil6"]
 [ext_resource type="Script" uid="uid://btb8q1u2hf44s" path="res://scenes/quests/story_quests/FragmentOfNexus/2_FragmentOfNexus_combat/FragmentOfNexus_combat_components/puerta.gd" id="4_bexad"]
 [ext_resource type="PackedScene" uid="uid://iu2q66clupc6" path="res://scenes/game_elements/characters/player/player.tscn" id="5_n83a3"]
 [ext_resource type="PackedScene" uid="uid://b82nsrh332syj" path="res://scenes/game_elements/characters/enemies/throwing_enemy/throwing_enemy.tscn" id="6_yo7cp"]

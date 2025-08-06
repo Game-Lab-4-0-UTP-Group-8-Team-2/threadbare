@@ -69,7 +69,7 @@ texture_filter = 1
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(1058, 1263)
-scale = Vector2(2, 2)
+scale = Vector2(0.9, 0.9)
 sprite_frames = ExtResource("11_ygupl")
 animation = &"idle"
 frame_progress = 0.738184

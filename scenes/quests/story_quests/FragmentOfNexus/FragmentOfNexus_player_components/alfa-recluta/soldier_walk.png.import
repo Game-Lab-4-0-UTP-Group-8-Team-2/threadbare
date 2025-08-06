@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ce2ro1qqjsmaj"
-path="res://.godot/imported/alfa_mini.png-2d2f5e9a88503d1fcc9cdc1f32cc13ab.ctex"
+uid="uid://cajg05ixnexce"
+path="res://.godot/imported/soldier_walk.png-132a8c85cf1e65e324c9c08e0ff8c748.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/character_mini/alfa_mini.png"
-dest_files=["res://.godot/imported/alfa_mini.png-2d2f5e9a88503d1fcc9cdc1f32cc13ab.ctex"]
+source_file="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/soldier_walk.png"
+dest_files=["res://.godot/imported/soldier_walk.png-132a8c85cf1e65e324c9c08e0ff8c748.ctex"]
 
 [params]
 

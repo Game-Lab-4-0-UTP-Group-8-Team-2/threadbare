@@ -59,14 +59,14 @@ metadata/_edit_vertical_guides_ = [22.0]
 
 [node name="Alfa recluta2" type="AnimatedSprite2D" parent="."]
 position = Vector2(2848, 1109)
-scale = Vector2(2, 2)
+scale = Vector2(0.9, 0.9)
 sprite_frames = ExtResource("1_lwqdc")
 animation = &"idle"
 frame_progress = 0.738184
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="."]
 position = Vector2(98, 487)
-scale = Vector2(2, 2)
+scale = Vector2(0.9, 0.9)
 sprite_frames = ExtResource("1_lwqdc")
 animation = &"idle"
 frame_progress = 0.738184

@@ -225,14 +225,14 @@ text = "Continua en el sendero"
 
 [node name="Alfa recluta" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(43, 401)
-scale = Vector2(2, 2)
+scale = Vector2(0.9, 0.9)
 sprite_frames = ExtResource("20_cfqlk")
 animation = &"idle"
 frame_progress = 0.738184
 
 [node name="Alfa recluta2" type="AnimatedSprite2D" parent="OnTheGround"]
 position = Vector2(3754, 311)
-scale = Vector2(2, 2)
+scale = Vector2(0.9, 0.9)
 sprite_frames = ExtResource("20_cfqlk")
 animation = &"idle"
 frame_progress = 0.738184

@@ -1,9 +1,9 @@
-[gd_resource type="SpriteFrames" load_steps=27 format=3 uid="uid://bydgm2kyv2x7t"]
+[gd_resource type="SpriteFrames" load_steps=23 format=3 uid="uid://bydgm2kyv2x7t"]
 
 [ext_resource type="Texture2D" uid="uid://c0itxt8w3yml0" path="res://scenes/quests/story_quests/template/template_player_components/template_player_attack_01.png" id="1_wix88"]
 [ext_resource type="Texture2D" uid="uid://d222j31w5x3tj" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/spritesheet.png" id="2_n7edj"]
-[ext_resource type="Texture2D" uid="uid://cl3a6d4v8qowm" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/Alfa_recluta_idle.png" id="3_vabuh"]
-[ext_resource type="Texture2D" uid="uid://twob78lvxlct" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/Alfa_recluta_walk.png" id="4_1m78c"]
+[ext_resource type="Texture2D" uid="uid://c0umoiu6yriaa" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/soldier_idle.png" id="3_vabuh"]
+[ext_resource type="Texture2D" uid="uid://cajg05ixnexce" path="res://scenes/quests/story_quests/FragmentOfNexus/FragmentOfNexus_player_components/alfa-recluta/soldier_walk.png" id="4_1m78c"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yg72c"]
 atlas = ExtResource("1_wix88")
@@ -55,43 +55,27 @@ region = Rect2(448, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8tpkl"]
 atlas = ExtResource("3_vabuh")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vabuh"]
-atlas = ExtResource("3_vabuh")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1m78c"]
-atlas = ExtResource("3_vabuh")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f1lki"]
-atlas = ExtResource("3_vabuh")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6pund"]
-atlas = ExtResource("3_vabuh")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7mh52"]
 atlas = ExtResource("4_1m78c")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vabuh"]
+atlas = ExtResource("4_1m78c")
+region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7it3h"]
 atlas = ExtResource("4_1m78c")
-region = Rect2(64, 0, 64, 64)
+region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3vbx"]
 atlas = ExtResource("4_1m78c")
-region = Rect2(128, 0, 64, 64)
+region = Rect2(768, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h384o"]
 atlas = ExtResource("4_1m78c")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nd1ly"]
-atlas = ExtResource("4_1m78c")
-region = Rect2(256, 0, 64, 64)
+region = Rect2(896, 0, 128, 128)
 
 [resource]
 animations = [{
@@ -144,41 +128,26 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8tpkl")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vabuh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1m78c")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vabuh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_f1lki")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6pund")
 }],
 "loop": true,
 "name": &"idle",
 "speed": 1.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7mh52")
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_f1lki")
 }, {
-"duration": 1.0,
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_vabuh")
+}, {
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_7it3h")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_d3vbx")
 }, {
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_h384o")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nd1ly")
 }],
 "loop": true,
 "name": &"walk",
